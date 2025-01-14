@@ -108,23 +108,6 @@ func TestDeleteSender(t *testing.T) {
 	}
 }
 
-func TestActivateSender(t *testing.T) {
-	client, mux, teardown := setup()
-
-	defer teardown()
-
-	mux.HandleFunc("/sms/sendernames/test/commands/activate", func(w http.ResponseWriter, r *http.Request) {
-		assertRequestMethod(t, r, "PUT")
-		assertRequestJsonContains(t, r, "code", "activation-code")
-	})
-
-	err := client.Sender.Activate(ctx, "test", "activation-code")
-
-	if err != nil {
-		t.Fatal(err)
-	}
-}
-
 func TestMakeDefaultSender(t *testing.T) {
 	client, mux, teardown := setup()
 

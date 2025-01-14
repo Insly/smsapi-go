@@ -1,5 +1,8 @@
 # Changes
 
+## 1.2.3
+- Remove not supported API endpoint (sendername activation)
+
 ## 1.2.2
 - Fix Sub-user API parameters naming
 

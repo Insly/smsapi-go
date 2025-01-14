@@ -63,20 +63,6 @@ func (senderApi *SenderApi) Delete(ctx context.Context, name string) error {
 	return err
 }
 
-func (senderApi *SenderApi) Activate(ctx context.Context, name, code string) error {
-	uri := fmt.Sprintf("/sms/sendernames/%s/commands/activate", name)
-
-	payload := struct {
-		Code string `json:"code"`
-	}{
-		Code: code,
-	}
-
-	err := senderApi.client.Put(ctx, uri, nil, &payload)
-
-	return err
-}
-
 func (senderApi *SenderApi) MakeDefault(ctx context.Context, name string) error {
 	uri := fmt.Sprintf("/sms/sendernames/%s/commands/make_default", name)
 
