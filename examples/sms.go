@@ -3,7 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
-	"github.com/smsapi/smsapi-go/smsapi"
+	"github.com/Insly/smsapi-go/smsapi"
 	"log"
 	"os"
 )

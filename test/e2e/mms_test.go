@@ -1,7 +1,7 @@
 package e2e
 
 import (
-	"github.com/smsapi/smsapi-go/smsapi"
+	"github.com/Insly/smsapi-go/smsapi"
 	"log"
 	"testing"
 	"time"

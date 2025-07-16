@@ -1,7 +1,7 @@
 package e2e
 
 import (
-	"github.com/smsapi/smsapi-go/smsapi"
+	"github.com/Insly/smsapi-go/smsapi"
 	"log"
 	"testing"
 )
@@ -71,10 +71,10 @@ func TestCreateShortUrlWithExpire(t *testing.T) {
 	ctx, cancel := createCtx()
 	defer cancel()
 
-    expireTime := 10
-    expireUnit := smsapi.ExpireTimeDays
+	expireTime := 10
+	expireUnit := smsapi.ExpireTimeDays
 
-    link := &smsapi.Link{
+	link := &smsapi.Link{
 		Name:        "go-smsapi-expire",
 		Description: "go-smsapi-expire",
 		Url:         "https://smsapi.pl",
