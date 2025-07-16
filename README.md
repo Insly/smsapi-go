@@ -7,7 +7,7 @@ A GO client for accessing smsapi.pl / smsapi.com API.
 
 ## Usage  ##
 ```go
-import "github.com/smsapi/smsapi-go/smsapi"
+import "github.com/Insly/smsapi-go/smsapi"
 ```
 
 Create new Smsapi client for smsapi.com customers:

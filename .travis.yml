@@ -1,6 +1,6 @@
 language: go
 
-go_import_path: github.com/smsapi/smsapi-go/smsapi
+go_import_path: github.com/Insly/smsapi-go/smsapi
 
 go:
   - "1.x"

@@ -2,7 +2,7 @@ package e2e
 
 import (
 	"context"
-	"github.com/smsapi/smsapi-go/smsapi"
+	"github.com/Insly/smsapi-go/smsapi"
 	"log"
 	"testing"
 )
